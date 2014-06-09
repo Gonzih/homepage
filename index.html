@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Max Gonzih</title>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-type">
+        <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+        <style>
+            *  {
+                font-family: 'VT323';
+            }
+
+            canvas {
+                margin: 0 auto;
+                display: block;
+            }
+
+            .about { float: left; }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                font-size: 22px;
+            }
+
+            .links {
+                float: right;
+            }
+
+            .header {
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                margin: 0 auto;
+                display: block;
+                width: 400px;
+                text-align: center;
+                font-size: 50px;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            a:before {
+                content: "-> ";
+            }
+
+            .row { width: 100%; float: left; clear: both; }
+        </style>
+        <script src="langtons_ant.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <div class="row">
+        <div class="header">
+            <h1>Max Gonzih</h1>
+
+            <ul class="about">
+                <li>Software engineer. Backend, frontend.</li>
+                <li>♥ Clojure[Script] + Ruby[onRails] + Javascript.</li>
+                <li>♥ Functional programming.</li>
+                <li>♥ Linux + Vim + Git + Fish + Tmux + Xmonad.</li>
+                <li>♥ Embed systems.</li>
+                <li>♥ Virtualization and containers.</li>
+            </ul>
+
+            <ul class="links">
+                <li><a target="_blank" href="https://github.com/Gonzih">GitHub</a></li>
+                <li><a target="_blank" href="http://blog.gonzih.me">Blog</a></li>
+                <li><a target="_blank" href="mailto:gonzih@gmail.com">Email</a></li>
+                <li><a target="_blank" href="https://careers.stackoverflow.com/gonzih">CV</a></li>
+                <li><a target="_blank" href="https://twitter.com/Gonzih">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <canvas id="turmite" width="600" height="600"></canvas>
+        <script type="text/javascript">langtons_ant.core.run("turmite")</script>
+    </div>
+    </body>
+</html>
