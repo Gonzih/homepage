@@ -29,8 +29,12 @@
                 float: right;
             }
 
+            .linsk li {
+                display: block;
+            }
+
             .header {
-                width: 600px;
+                width: 750px;
                 margin: 0 auto;
             }
 
@@ -48,10 +52,10 @@
                 background: #fff;
                 text-decoration: none;
                 padding: 3px;
-                display: block;
+                display: inline-block;
             }
 
-            a:before {
+            a .to:before {
                 content: "→ ";
             }
 
@@ -85,11 +89,13 @@
             </ul>
 
             <ul class="links">
-                <li><a target="_blank" href="https://github.com/Gonzih">GitHub</a></li>
-                <li><a target="_blank" href="http://blog.gonzih.me">Blog</a></li>
-                <li><a target="_blank" href="mailto:gonzih@gmail.com">Email</a></li>
-                <li><a target="_blank" href="https://careers.stackoverflow.com/gonzih">CV</a></li>
-                <li><a target="_blank" href="https://twitter.com/Gonzih">Twitter</a></li>
+                case ref of
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://github.com/Gonzih">GitHub &nbsp;<span class="to">forkMe</span></a></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://blog.gonzih.me">Blog &nbsp;&nbsp;&nbsp;<span class="to">readMe</span></a></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:gonzih@gmail.com">Email &nbsp;&nbsp;<span class="to">pokeMe</span></a></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://careers.stackoverflow.com/gonzih">CV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="to">hireMe</span></a></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://twitter.com/Gonzih">Twitter <span class="to">openSweater</span></a></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">_  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="to">exitWithFailure</span></a></li>
             </ul>
         </div>
     </div>
