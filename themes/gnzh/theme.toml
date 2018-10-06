@@ -1,0 +1,12 @@
+name = "gnzh"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Max Gonzih"
+  homepage = "https://gonzih.me"
