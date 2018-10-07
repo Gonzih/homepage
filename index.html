@@ -57,10 +57,6 @@
             display: inline-block;
         }
 
-        a .to:before {
-            content: "→ ";
-        }
-
         a:hover {
             color: #fff;
             background: #000;
@@ -95,12 +91,23 @@
 </ul>
 
             <ul class="links">
-    case ref of
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://github.com/Gonzih">GitHub &nbsp;<span class="to">forkMe</span></a></li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://blog.gonzih.me">Blog &nbsp;&nbsp;&nbsp;<span class="to">readMe</span></a></li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:gonzih@gmail.com">Email &nbsp;&nbsp;<span class="to">mailMe</span></a></li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://careers.stackoverflow.com/gonzih">CV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="to">hireMe</span></a></li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">_  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="to">exitWithFailure</span></a></li>
+    <li>func main() {</li>
+    <li>&nbsp;&nbsp;switch os.Args[0] {</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;case "github":</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://github.com/Gonzih"><span class="to">ForkMe()</span></a></li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;case "github":</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://blog.gonzih.me"><span class="to">ReadMe()</span></a></li>
+
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;case "github":</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:gonzih@gmail.com"><span class="to">EmailMe()</span></a></li>
+
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;case "CV":</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://careers.stackoverflow.com/gonzih"><span class="to">HireMe()</span></a></li>
+
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;default:</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="to">os.Exit(0)</span></a></li>
+    <li>&nbsp;&nbsp;}</li>
+    <li>}</li>
 </ul>
 
         </div>
