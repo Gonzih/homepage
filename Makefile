@@ -12,7 +12,7 @@ preview:
 
 TS := $(date)
 public:
-	git clone -b gh-pages git@github.com:goconca/goconca.github.io.git public
+	git clone -b gh-pages git@github.com:Gonzih/homepage.git public
 
 deploy: public
 	cd public \
