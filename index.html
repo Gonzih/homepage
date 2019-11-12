@@ -75,7 +75,7 @@
     <li>Software engineer.</li>
     <li>&nbsp;</li>
     <li>(defmacro ❤ [&amp;args]</li>
-    <li>&nbsp;&nbsp;`(update-in me [:passionate :IT]</li>
+    <li>&nbsp;&nbsp;`(update-in me [:passionate :tech]</li>
     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conj ~@args)</li>
     <li>&nbsp;</li>
     <li>❤ Go.</li>
@@ -92,21 +92,13 @@
 </ul>
 
             <ul class="links">
-    <li>func main() {</li>
-    <li>&nbsp;&nbsp;switch os.Args[0] {</li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;case "github":</li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://github.com/Gonzih"><span class="to">ForkMe()</span></a></li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;case "blog":</li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://blog.gonzih.me"><span class="to">ReadMe()</span></a></li>
-
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;case "email":</li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:gonzih@gmail.com"><span class="to">EmailMe()</span></a></li>
-
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;case "CV":</li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.notion.so/gonzih/Max-Gonzih-CV-d6cb096878a24c9293f2ac8f0f6f87ee"><span class="to">HireMe()</span></a></li>
-
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;default:</li>
-    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="to">os.Exit(0)</span></a></li>
+    <li>fn main(arg: &amp;str) -> Result&lt;()> {</li>
+    <li>&nbsp;&nbsp;match arg {</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;"github" =&gt; <a target="_blank" href="https://github.com/Gonzih"><span class="to">fork_me()?</span></a>,</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;"blog" =&gt; <a target="_blank" href="https://blog.gonzih.me"><span class="to">read_me()?</span></a>,</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;"email" =&gt; <a target="_blank" href="mailto:gonzih@gmail.com"><span class="to">email_me()?</span></a>,</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;"cv" =&gt; <a target="_blank" href="https://www.notion.so/gonzih/Max-Gonzih-CV-d6cb096878a24c9293f2ac8f0f6f87ee"><span class="to">hire_me()?</span></a>,</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;_ =&gt; <a href="#"><span class="to">Ok(())</span></a>,</li>
     <li>&nbsp;&nbsp;}</li>
     <li>}</li>
 </ul>
