@@ -9,10 +9,10 @@ jobs:
     steps:
       - setup_remote_docker
       - checkout
-      - run: nix-env -i gnumake docker git
+      - run: nix-env -i gnumake docker git hugo
       - run: rm -rf public || exit 0
       - run: git clone -b gh-pages https://$GITHUB_TOKEN@github.com/Gonzih/homepage.git public
-      - run: make generate-using-docker
+      - run: make generate
       - run: git config --global user.name "Deployment Bot (from Circle CI)"
       - run: git config --global user.email "deploy@circleci.com"
       - run: make deploy
