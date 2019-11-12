@@ -13,14 +13,4 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-ENV USER gnzh
-
-ARG GNZHUID
-
-RUN adduser -S -u $GNZHUID $USER
-
-USER $USER
-RUN mkdir $HOME/bin
-ENV HOME /home/$USER/
-
 WORKDIR /var/website
