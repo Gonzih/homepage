@@ -6,7 +6,6 @@ jobs:
         - source
     docker:
       - image: nixos/nix
-        user: nix
     steps:
       - setup_remote_docker
       - checkout
