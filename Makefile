@@ -2,7 +2,7 @@ push:
 	git push
 
 generate:
-	ls -lha /var/website
+	ls -lha .
 	du -hs *
 	hugo
 	du -hs *

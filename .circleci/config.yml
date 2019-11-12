@@ -7,7 +7,6 @@ jobs:
     docker:
       - image: nixos/nix
     steps:
-      - setup_remote_docker
       - checkout
       - run: nix-env -i gnumake docker git hugo
       - run: rm -rf public || exit 0
