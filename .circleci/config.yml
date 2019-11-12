@@ -8,8 +8,6 @@ jobs:
       - image: nixos/nix
     steps:
       - checkout
-      - run: nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixos
-      - run: nix-channel --update
       - run: nix-env -i gnumake docker git
       - run: rm -rf public || exit 0
       - run: git clone -b gh-pages https://$GITHUB_TOKEN@github.com/Gonzih/homepage.git public
