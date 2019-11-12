@@ -32,7 +32,7 @@ docker-rm:
 	docker rm website-builder || echo "Not found"
 
 generate-using-docker: docker-image docker-rm public
-	docker run --rm -t -v $(shell pwd):/var/website --name website-builder website-builder make generate
+	docker run --rm -t -v $(shell pwd):/var/website --name website-builder website-builder ls -lha
 
 deploy-using-docker: public
 	make generate-using-docker
