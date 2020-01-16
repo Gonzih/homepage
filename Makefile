@@ -17,7 +17,7 @@ else
 PUBLIC_URL = git@github.com:Gonzih/homepage.git
 endif
 public:
-	git clone -b master $(PUBLIC_URL) public
+	git clone -b gh-pages $(PUBLIC_URL) public
 
 setup-git:
 	git config --global user.email "$(GIT_EMAIL)"
